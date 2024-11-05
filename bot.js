@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Initialize Telegram Bot
-const bot = new Telegraf("5368324838:AAHvB_0kyNfJ-ozs4GygguSX-fVmBlEfMdk");
+const bot = new Telegraf("7895268761:AAH7VsK-3itzogn_3VqUQEz3sWiL25GxNPU");
 bot.use(session());
 
 // Set up Express
