@@ -1,0 +1,44 @@
+<!-- views/stream.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .stream-container {
+            flex: 1;
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="stream-container">
+        <iframe 
+            src="<%= streamData.embedUrl %>"
+            allowfullscreen="true"
+            scrolling="no"
+            frameborder="0"
+            allow="encrypted-media"
+        ></iframe>
+    </div>
+</body>
+</html>
